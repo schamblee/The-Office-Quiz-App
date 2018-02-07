@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Office Quotes Quiz</title>
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  </head>
+  <body class="body">
+    
+    
+  <!-- Navigation -->
+    <header role="banner" class ="header">
+      <div class="row">
+          <div class="header-title"><h1>The Office Quotes Quiz</h1></div>
+          <div class="header-subtitle">Name the Office character who said each quote</div>
+      </div>
+    </header>
+    
+  <main role="main">
+  
+    
+  <!-- First Page -->
+    <section class="first-page" role="region">
+      <div class="intro-div">
+        <div class="intro-text">Welcome to The Office quotes quiz!<br>Can you name the character who said each line?<br>Click "Begin" to start the quiz.</div>
+        <img src="https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2015/03/the_office_season_1_cast.jpg" alt="the Office cast" class="intro-image">
+        <button class="begin-btn">Begin</button>
+      </div>
+    </section>
+    
+    
+  <!-- Question page -->
+    <section class="question-page" role="region">
+      <div class="quote-section">
+        <div class="counter">Question: <span class="question-number"></span>/10    Points: <span class="user-points">0</span></div>
+        <span class="quote"></span>
+      </div>
+        <form class="answer-options" id="answer-option-form" role="form">
+          <fieldset>
+          <div class="answer-div"><label class="answer"><input required="true" name="answer-option" type="radio" value="0">    <span class="answer1"></span></label></div>
+          <div class="answer-div"><label class="answer"><input name="answer-option" required="true" type="radio" value="1">    <span class="answer2"></span></label></div>
+          <div class="answer-div"><label class="answer"><input name="answer-option" required="true" type="radio" value="2">    <span class="answer3"></span></label></div>
+          <div class="answer-div"><label class="answer"><input name="answer-option" required="true" type="radio" value="3">     <span class="answer4"></span></label></div>
+          <button class="submit-answer" type="submit">Next</button>
+        </fieldset>
+      </form>
+    </section>
+    
+      
+  <!-- Feedback page: correct --> 
+    <section class="feedback feedback-page-correct"  role="region">
+      <div class="correct-answer-text">You got it right!</div>
+        <button class="next-question-btn">Next</button>
+      <div class="answer-feedback-correct">
+        <img src="https://media0.giphy.com/media/mp1JYId8n0t3y/200.webp#24-grid1" alt="Michael and Erin Celebrating" class="feedback-image">
+      </div>
+    </section>
+
+
+  <!-- Feedback page: incorrect -->
+    <section class="feedback feedback-page-incorrect"  role="region">
+      <div class="answer-feedback-incorrect">
+        <div class="incorrect-answer-text">Sorry, you got it wrong. The correct answer is <span class="correct-answer"></span></div>
+        <button class="next-question-btn">Next</button>
+        <img src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp#4-grid1" alt="Michael Scott is very upset" class="feedback-image">
+      </div>
+    </section>
+    
+    
+  <!-- Final Page -->
+    <section class="final-page"  role="region">
+      <div class="final-div">
+        <img src="https://media2.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="The Office cast celebrating." class="final-image">
+        <div class="final-text">Congratulations! You finished.</div>
+        <div class="final-score">Final Score: <span class="final-score"></span> out of 10</div>
+        <button class="restart-btn" type="submit">Start Over</button>
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>

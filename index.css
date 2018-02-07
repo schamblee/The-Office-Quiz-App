@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html {
+  font-family: "Roboto", Sans-Serif;
+  font-size: 15px;
+  background-color: #ACF0F2;
+  text-align: center;
+}
+
+body {
+  background-image: url("https://www.nbcstore.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/t/h/theoffice_worldsbest_mug_mockup_handle-on-left_15oz_1.png");
+  background-attachment: fixed;
+  background-position: bottom 80px right 0;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  padding-bottom: 400px;
+}
+
+header {
+  background-color: #EB7F00;
+  color: #F3FFE2;
+  width: 100%;
+  margin-top: -15px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+}
+
+.intro-image {
+  width: 75%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.feedback, .final-page {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 3px;
+  background-color: white;
+  opacity: .98;
+  font-weight: bold;
+}
+
+.feedback-image, .final-image {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.first-page, .question-page, .final-page {
+  height: 50%;
+  margin-top: 50px;
+}
+
+.intro-text {
+  margin-bottom: 15px;
+}
+
+fieldset {
+  background-color: white;
+  opacity: .98;
+  border: none;
+  text-align: center;
+  width: 75%;
+  border-radius: 3px;
+  margin: auto;
+}
+
+
+h1, .quote {
+  font-family: "Roboto slab", Serif;
+  font-size: 17px;
+}
+
+.quote:before, .quote:after {
+  content: '"';
+}
+
+.header-subtitle {
+  font-size: 15px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+}
+
+.counter, .points-counter {
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+
+.answer, .submit-answer, .quiz-feedback, .quote, .begin-btn, .restart-btn {
+  width: 75%;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all .4s ease-in-out 0s;
+}
+
+.next-question-btn {
+  width: 75%;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: all .4s ease-in-out 0s;
+}
+
+.submit-answer {
+  width: 90%;
+}
+
+.next-question-btn, .begin-btn, .restart-btn, .submit-answer  {
+  background-color: #EB7F00;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #F3FFE2;
+}
+
+.selected-option.answer-div {
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #EB7F00;
+}
+
+.selected-option.answer-div:hover {
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #EB7F00;
+}
+
+.begin-btn:hover, .next-question-btn:hover, .begin-btn:hover, .restart-btn:hover, .submit-answer:hover, .answer-div:hover {
+  background-color: #225378;
+}
+
+.answer-div {
+  margin: auto;
+  background-color: #1595A3;
+  width: 90%;
+  border-radius: 10px;
+  color: #F3FFE2;
+  transition: all .4s ease-in-out 0s;
+}
+
+.quote-section {
+  background-color: #225378;
+  color: white;
+  opacity: .95;
+  border-radius: 3px;
+  margin: auto;
+  width: 75%;
+}
+
+.correct-answer {
+  font-weight: bold;
+}
+
+.correct-answer-text, .incorrect-answer-text {
+  padding-top: 5px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.hide-section {
+  display: none;
+}
+
+
+/*ipad portrait*/
+@media only screen and (min-width: 768px) {
+body {
+  padding-bottom: 350px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  
+header {
+  height: 100px;
+  margin-bottom: 0;
+  margin-top: -10px;
+  padding-bottom: -100px;
+}
+  
+h1 {
+  font-size: 30px;
+}  
+  
+html {
+  font-size: 18px;
+}
+
+body {
+  background-image: url("https://www.nbcstore.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/t/h/theoffice_worldsbest_mug_mockup_handle-on-left_15oz_1.png");
+  background-attachment: fixed;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 350px;
+  font-size: 18px;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.selected-option.answer-div {
+  font-size: 20px;
+}
+
+.selected-option.answer-div:hover {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #EB7F00;
+}
+
+.quote {
+  font-size: 25px;
+}
+  
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  left: 50%;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  width: 50%;
+}
+
+.feedback, .final-page {
+  width: 33%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.intro-div {
+  width: 100%;
+}
+
+.feedback-page-correct {
+  margin-bottom: 10%;
+}
+
+
+/*Clearfix*/
+section:before, .feedback:before,
+section:after, .feedback:after {
+  display: block;
+  content: '';
+}
+
+section:after, .feedback:after {
+  clear: both;
+}
+
+}
+
+
+
+
